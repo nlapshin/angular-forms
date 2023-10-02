@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms'
 
 
 @Component({
   selector: 'app-ng-form',
   template: `
-    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" ngModel required>
+        <input type="text" id="name" name="name100500" ngModel required>
       </div>
       
       <div class="form-group">
@@ -20,7 +21,11 @@ import { Component } from '@angular/core';
   `
 })
 export class AppNgFormComponent {
-  onSubmit(formData: any) {
-    console.log(formData);
+  onSubmit(myForm: NgForm) {
+    if (myForm.invalid) {
+      // doSomething();
+      // Скролл до элемента который с ошибкой.
+      // toast показать
+    };
   }
 }

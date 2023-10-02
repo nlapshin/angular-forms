@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+
+// <!-- <app-ng-model></app-ng-model> -->
 @Component({
   selector: 'app-root',
   template: `
