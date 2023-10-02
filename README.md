@@ -32,3 +32,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://www.angularjswiki.com/angular/ngmodelchange-change-angular/
 https://angular.io/api/forms/NgModel
+
+# Реактивные формы
+
+- императивными(не декларативные).
+- реактивные(используют RxJS) - это способ наблюдения за изменениями.
+
+// Когда мы делаем SQL запросы - это декларативно получить данные. Что?
+// Когда мы используем ORM db.where({}) - это больше императивный подход. Как?
+
+// AbstractControl - нельзя создавать экземпляр, можно только наследоваться и уже
+// наследники могут создавать экземпляры.
+// Он как базовый класс и там большинство базовых методв
+
+// setValue и patchValue.
