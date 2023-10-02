@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppNgFormComponent } from './components/ngForm.component';
+import { AppNgFormControlComponent } from './components/ngFormControl.component';
 import { AppNmModelComponent } from './components/ngModel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNgFormComponent,
-    AppNmModelComponent
+    AppNmModelComponent,
+    AppNgFormControlComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent, AppNgFormComponent, AppNmModelComponent]
 })

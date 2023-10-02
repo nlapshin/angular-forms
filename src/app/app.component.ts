@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <div>
       <app-ng-model></app-ng-model>
       <app-ng-form></app-ng-form>
+      <app-ng-form-control></app-ng-form-control>
     </div>
   `,
   styleUrls: ['./app.component.css']
